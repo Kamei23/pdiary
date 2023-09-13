@@ -1,0 +1,20 @@
+<div id="<%= dom_id idea %>" class="row">
+  <div class="col-md-6 my-3">
+    <%= image_tag(idea.picture_url, width: '100%') if idea.picture.present? %>
+  </div>
+  <div class="col-md-6 my-3">
+    <h1>
+      <%= idea.title %>
+    </h1>
+
+    <time class="badge rounded-pill bg-info text-dark">
+      <%= idea.published_at %>
+    </time>
+
+    <p class="my-4">
+      <%= idea.description %>
+    </p>
+
+  </div>
+
+</div>
