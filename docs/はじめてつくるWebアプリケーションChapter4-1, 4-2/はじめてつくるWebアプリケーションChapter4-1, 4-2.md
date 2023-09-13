@@ -91,7 +91,7 @@ JavaScript
 
 `　`まずは一覧画面で画像を横に3枚ずつタイルのように並べるようにしてみましょう。 app/views/ideas/index.html.erbをエディターで開いてみます。
 
-<p style="color: green"><%= notice %></p> <![](Aspose.Words.59bd4db7-9a6c-4466-8bea-5a43636b199c.001.png)h1>Ideas</h1>
+<p style="color: green"><%= notice %></p> <![](Words.59bd4db7-9a6c-4466-8bea-5a43636b199c.001.png)h1>Ideas</h1>
 
 <div id="ideas">
 
@@ -107,11 +107,11 @@ JavaScript
 
 </div>
 
-<%= link\_to "New idea", new\_idea\_path %> <%= render idea %>![](Aspose.Words.59bd4db7-9a6c-4466-8bea-5a43636b199c.002.png)
+<%= link\_to "New idea", new\_idea\_path %> <%= render idea %>![](Words.59bd4db7-9a6c-4466-8bea-5a43636b199c.002.png)
 
 renderがあるのでapp/views/ideas/\_idea.html.erbをエディターで開いてみましょう。
 
-<div id="<%= dom\_id idea %>">![](Aspose.Words.59bd4db7-9a6c-4466-8bea-5a43636b199c.003.png)
+<div id="<%= dom\_id idea %>">![](Words.59bd4db7-9a6c-4466-8bea-5a43636b199c.003.png)
 
 <p>
 
@@ -133,7 +133,7 @@ renderがあるのでapp/views/ideas/\_idea.html.erbをエディターで開い�
 
 <p>
 
-<strong>Published at:</strong> ![](Aspose.Words.59bd4db7-9a6c-4466-8bea-5a43636b199c.004.png)<%= idea.published\_at %>
+<strong>Published at:</strong> ![](Words.59bd4db7-9a6c-4466-8bea-5a43636b199c.004.png)<%= idea.published\_at %>
 
 </p>
 
@@ -143,7 +143,7 @@ renderがあるのでapp/views/ideas/\_idea.html.erbをエディターで開い�
 
 `　`部分テンプレートを次のように変更します。
 
-<p style="color: green"><%= notice %></p> <![](Aspose.Words.59bd4db7-9a6c-4466-8bea-5a43636b199c.005.png)h1>Ideas</h1>
+<p style="color: green"><%= notice %></p> <![](Words.59bd4db7-9a6c-4466-8bea-5a43636b199c.005.png)h1>Ideas</h1>
 
 <div id="ideas">
 
@@ -163,11 +163,11 @@ renderがあるのでapp/views/ideas/\_idea.html.erbをエディターで開い�
 
 `　`確認してみましょう。
 
-![](Aspose.Words.59bd4db7-9a6c-4466-8bea-5a43636b199c.006.jpeg)
+![](Words.59bd4db7-9a6c-4466-8bea-5a43636b199c.006.jpeg)
 
 `　`登録した画像が縦に並んで表示されています。ここから横に3枚ずつ並ぶようにしていきましょ う。次のように変更します。
 
-<p style="color: green"><%= notice %></p> <![](Aspose.Words.59bd4db7-9a6c-4466-8bea-5a43636b199c.007.png)h1>Ideas</h1>
+<p style="color: green"><%= notice %></p> <![](Words.59bd4db7-9a6c-4466-8bea-5a43636b199c.007.png)h1>Ideas</h1>
 
 <div id="ideas">
 
@@ -201,7 +201,7 @@ renderがあるのでapp/views/ideas/\_idea.html.erbをエディターで開い�
 
 `　`変更できたら確認してみましょう。
 
-![](Aspose.Words.59bd4db7-9a6c-4466-8bea-5a43636b199c.008.png)
+![](Words.59bd4db7-9a6c-4466-8bea-5a43636b199c.008.png)
 
 `　`横に並ぶようになりました。しかし、重なって表示されてしまっています。これはimage\_tagメソッ ドの引数の影響です。
 
@@ -209,13 +209,13 @@ renderがあるのでapp/views/ideas/\_idea.html.erbをエディターで開い�
 
 `　`そこで、２つ目の引数をwidth: ‘100%’に変更してみます。これにより、画像を表示するときの最 大の横幅が、HTMLの親要素の横幅いっぱいに表示されるため、お互いの画像が重ならないよ うになります。
 
-![](Aspose.Words.59bd4db7-9a6c-4466-8bea-5a43636b199c.009.png)
+![](Words.59bd4db7-9a6c-4466-8bea-5a43636b199c.009.png)
 
 `　`重ならずに画像が表示されていることが確認できました。
 
 `　`最後にリンク部分を変更しましょう。まずは、画像の下に表示されている「Show this idea」リン クを削除して、画像にリンクを設定するように変更します。app/views/ideas/index.html.erbを開 き、次のように変更します。
 
-<p style="color: green"><%= notice %></p> <![](Aspose.Words.59bd4db7-9a6c-4466-8bea-5a43636b199c.010.png)h1>Ideas</h1>
+<p style="color: green"><%= notice %></p> <![](Words.59bd4db7-9a6c-4466-8bea-5a43636b199c.010.png)h1>Ideas</h1>
 
 <div id="ideas">
 
@@ -245,7 +245,7 @@ renderがあるのでapp/views/ideas/\_idea.html.erbをエディターで開い�
 
 <%= link\_to "New idea", new\_idea\_path %>
 
-![](Aspose.Words.59bd4db7-9a6c-4466-8bea-5a43636b199c.011.png)
+![](Words.59bd4db7-9a6c-4466-8bea-5a43636b199c.011.png)
 
 `　`「Show this idea」リンクが削除されています。
 
@@ -253,9 +253,9 @@ renderがあるのでapp/views/ideas/\_idea.html.erbをエディターで開い�
 
 `　`app/views/ideas/index.html.erbの最後の行にある<%= link\_to “New idea”, new\_idea\_path%>を削除して保存します。そしてナビゲーションバーに移動したいので、 app/views/layouts/application.html.erbを開いて、次のように変更します。
 
-![](Aspose.Words.59bd4db7-9a6c-4466-8bea-5a43636b199c.012.jpeg)
+![](Words.59bd4db7-9a6c-4466-8bea-5a43636b199c.012.jpeg)
 
-![](Aspose.Words.59bd4db7-9a6c-4466-8bea-5a43636b199c.013.jpeg)
+![](Words.59bd4db7-9a6c-4466-8bea-5a43636b199c.013.jpeg)
 
 「New idea」リンクがナビゲーションバーに移動しています。
 
@@ -263,7 +263,7 @@ renderがあるのでapp/views/ideas/\_idea.html.erbをエディターで開い�
 
 `　`次に参照画面で、左側に画像、右側に日記の詳細情報を表示するように変更してみましょう。 参照画面は、app/views/ideas/show.html.erbになります。
 
-<p style="color: green"><%= notice %></p> ![](Aspose.Words.59bd4db7-9a6c-4466-8bea-5a43636b199c.014.png)<%= render @idea %>
+<p style="color: green"><%= notice %></p> ![](Words.59bd4db7-9a6c-4466-8bea-5a43636b199c.014.png)<%= render @idea %>
 
 <div>
 
@@ -273,7 +273,7 @@ renderがあるのでapp/views/ideas/\_idea.html.erbをエディターで開い�
 
 `　`部分テンプレートがあるのでapp/views/idea/\_idea.html.erbを開きます。そして、次のように変 更 しましょう。
 
-<div id="<%= dom\_id idea %>" class="row">![](Aspose.Words.59bd4db7-9a6c-4466-8bea-5a43636b199c.015.png)
+<div id="<%= dom\_id idea %>" class="row">![](Words.59bd4db7-9a6c-4466-8bea-5a43636b199c.015.png)
 
 <div class="col-md-6 my-3">
 
@@ -301,13 +301,13 @@ renderがあるのでapp/views/ideas/\_idea.html.erbをエディターで開い�
 
 `　`要所要所へ、要素と属性を追加しました。ページを更新して確認してみましょう。
 
-![](Aspose.Words.59bd4db7-9a6c-4466-8bea-5a43636b199c.016.png)
+![](Words.59bd4db7-9a6c-4466-8bea-5a43636b199c.016.png)
 
 `　`画像が左側へ、日記の詳細が右側に表示され、タイトルの文字が大きくなり投稿日が青色で囲 まれるようになりました。
 
 `　`最後に画像下のリンク部分を変更しましょう。app/views/ideas/show.html.erbを次のように変更 します。
 
-<p style="color: green"><%= notice %></p> ![](Aspose.Words.59bd4db7-9a6c-4466-8bea-5a43636b199c.017.png)<%= render @idea %>
+<p style="color: green"><%= notice %></p> ![](Words.59bd4db7-9a6c-4466-8bea-5a43636b199c.017.png)<%= render @idea %>
 
 <div class="btn-toolbar">
 
@@ -321,7 +321,7 @@ renderがあるのでapp/views/ideas/\_idea.html.erbをエディターで開い�
 
 `　`ブラウザをリロードして確認してみましょう。
 
-![](Aspose.Words.59bd4db7-9a6c-4466-8bea-5a43636b199c.018.png)
+![](Words.59bd4db7-9a6c-4466-8bea-5a43636b199c.018.png)
 
 `　`意図した通りに変更できたこと確認できました。 参考書籍
 

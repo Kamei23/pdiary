@@ -43,7 +43,7 @@ resources :ideas![ref1]
 
 `　`それでは、ルートパスと、コントローラー・アクションの紐付けを設定してみましょう。 config/routes.rbを次のように変更して保存します。
 
-Rails.application.routes.draw do![](Aspose.Words.80aec09d-ff3a-4c82-8729-29632cfbcada.002.png)
+Rails.application.routes.draw do![](Words.80aec09d-ff3a-4c82-8729-29632cfbcada.002.png)
 
 root to: redirect('/ideas')
 
@@ -74,7 +74,7 @@ Bootstrapを導入しよう
 
 `　`以下が追加した結果です。
 
-<!DOCTYPE html>![](Aspose.Words.80aec09d-ff3a-4c82-8729-29632cfbcada.003.png)
+<!DOCTYPE html>![](Words.80aec09d-ff3a-4c82-8729-29632cfbcada.003.png)
 
 <html>
 
@@ -106,7 +106,7 @@ Bootstrapを導入しよう
 
 導入後ブラウザをリロードし、表示されているフォントや、文字の配置が少し異なっていることを確 認してみましょう。
 
-![](Aspose.Words.80aec09d-ff3a-4c82-8729-29632cfbcada.004.png)
+![](Words.80aec09d-ff3a-4c82-8729-29632cfbcada.004.png)
 
 ナビゲーションバーとフッターを作成しよう
 
@@ -116,7 +116,7 @@ Bootstrapを導入しよう
 
 `　`app/views/layouts/application.html.erbをエディターで開き、<body>の次の行に、次のプログラ ムを追加します。
 
-<nav class="navbar navbar-expand-lg bg-light">![](Aspose.Words.80aec09d-ff3a-4c82-8729-29632cfbcada.005.png)
+<nav class="navbar navbar-expand-lg bg-light">![](Words.80aec09d-ff3a-4c82-8729-29632cfbcada.005.png)
 
 <div class="container-fluid">
 
@@ -146,7 +146,7 @@ Bootstrapを導入しよう
 
 `　`追加できたらブラウザにアクセスして確認してみましょう。
 
-![](Aspose.Words.80aec09d-ff3a-4c82-8729-29632cfbcada.006.png)
+![](Words.80aec09d-ff3a-4c82-8729-29632cfbcada.006.png)
 
 フッター
 
@@ -154,7 +154,7 @@ Bootstrapを導入しよう
 
 `　`まず、app/views/layouts/application.html.erbを開き、<%= yield %>の次の行に、次のプログ ラムを追加して保存します。
 
-<footer class="footer mt-auto py-3 bg-light">![](Aspose.Words.80aec09d-ff3a-4c82-8729-29632cfbcada.007.png)
+<footer class="footer mt-auto py-3 bg-light">![](Words.80aec09d-ff3a-4c82-8729-29632cfbcada.007.png)
 
 <div class="container">
 
@@ -164,7 +164,7 @@ Bootstrapを導入しよう
 
 `　`そして、<html>と<body>に、属性を追加して保存します。
 
-<!-- ↓html —-> <![](Aspose.Words.80aec09d-ff3a-4c82-8729-29632cfbcada.008.png)html class="h-100">
+<!-- ↓html —-> <![](Words.80aec09d-ff3a-4c82-8729-29632cfbcada.008.png)html class="h-100">
 
 <!-- ↓body —->
 
@@ -172,9 +172,9 @@ Bootstrapを導入しよう
 
 ここまでの変更でapp/views/layouts/application.html.erbは以下のようになります。 ブラウザも確認してみましょう。
 
-![](Aspose.Words.80aec09d-ff3a-4c82-8729-29632cfbcada.009.png)
+![](Words.80aec09d-ff3a-4c82-8729-29632cfbcada.009.png)
 
-![](Aspose.Words.80aec09d-ff3a-4c82-8729-29632cfbcada.010.png)
+![](Words.80aec09d-ff3a-4c82-8729-29632cfbcada.010.png)
 
 各画面の見た目をきれいにしよう
 
@@ -184,13 +184,13 @@ Bootstrapを導入しよう
 
 `　`まず、[http://localhost:3000/ ](http://localhost:3000/)でアクセスする一覧画面ですが、よく見ると左側に余白がないので 余白を持たせましょう。app/views/layouts/application.html.erbを開き、<%= yield%>の部分を次 のように変更します。
 
-<div class="container">![](Aspose.Words.80aec09d-ff3a-4c82-8729-29632cfbcada.011.png)
+<div class="container">![](Words.80aec09d-ff3a-4c82-8729-29632cfbcada.011.png)
 
 <%= yield %>
 
 </div>
 
-![](Aspose.Words.80aec09d-ff3a-4c82-8729-29632cfbcada.012.jpeg)
+![](Words.80aec09d-ff3a-4c82-8729-29632cfbcada.012.jpeg)
 
 `　`余白ができました。
 
@@ -198,7 +198,7 @@ Bootstrapを導入しよう
 
 `　`まずは、投稿画面であるapp/views/ideas/new.html.erbをエディターで開いて内容をみてみま す。
 
-<h1>New idea</h1>![](Aspose.Words.80aec09d-ff3a-4c82-8729-29632cfbcada.013.png)
+<h1>New idea</h1>![](Words.80aec09d-ff3a-4c82-8729-29632cfbcada.013.png)
 
 <%= render "form", idea: @idea %> <br>
 
@@ -214,7 +214,7 @@ Bootstrapを導入しよう
 
 `　`今回のapp/views/ideas/\_form.html.erbは、編集画面のapp/views/ideas/edit.html.erbでも呼 び出しています。
 
-<h1>Editing idea</h1>![](Aspose.Words.80aec09d-ff3a-4c82-8729-29632cfbcada.014.png)
+<h1>Editing idea</h1>![](Words.80aec09d-ff3a-4c82-8729-29632cfbcada.014.png)
 
 <%= render "form", idea: @idea %> <br>
 
@@ -226,21 +226,21 @@ Bootstrapを導入しよう
 
 `　`app/views/ideas/new.html.erbと同じように<%= render “form”, idea: @idea %があります。 　今回の投稿画面と編集画面では、部分テンプレートである、app/views/ideas/\_form.html.erbを 変更すれば、どちらにもその変更が反映されることになります。エディターで開いて、次のように プログラムを変更して保存してみましょう。
 
-![](Aspose.Words.80aec09d-ff3a-4c82-8729-29632cfbcada.015.jpeg)
+![](Words.80aec09d-ff3a-4c82-8729-29632cfbcada.015.jpeg)
 
 これで、http://localhost:3000/ideas/new/にアクセスすると、整形された画面が表示されるはずで す。確認してみましょう。
 
-![](Aspose.Words.80aec09d-ff3a-4c82-8729-29632cfbcada.016.jpeg)
+![](Words.80aec09d-ff3a-4c82-8729-29632cfbcada.016.jpeg)
 
 `　`これで見た目もある程度整いました。最後にこの前追加したPreviewの欄も作成します。
 
-<div id="picture-preview">![](Aspose.Words.80aec09d-ff3a-4c82-8729-29632cfbcada.017.png)
+<div id="picture-preview">![](Words.80aec09d-ff3a-4c82-8729-29632cfbcada.017.png)
 
 </div>
 
 `　`こちらのapp/views/ideas/\_form.html.erbの上の行を先ほどやったものと同じように
 
-<div class="my-4">![](Aspose.Words.80aec09d-ff3a-4c82-8729-29632cfbcada.018.png)
+<div class="my-4">![](Words.80aec09d-ff3a-4c82-8729-29632cfbcada.018.png)
 
 <%= form.label :preview, style: "display: block", class: "form-label" %> <div class="row">
 
@@ -254,7 +254,7 @@ Bootstrapを導入しよう
 
 `　`このように変更します。ブラウザを更新して確認してみましょう。
 
-![](Aspose.Words.80aec09d-ff3a-4c82-8729-29632cfbcada.019.png)
+![](Words.80aec09d-ff3a-4c82-8729-29632cfbcada.019.png)
 
 `　`Previewの欄が表示されることが確認できました。
 
@@ -262,4 +262,4 @@ Bootstrapを導入しよう
 
 江森真由美，やだけいこ，小林智恵. (2023/4/20). はじめてつくるWebアプリケーション 〜Ruby on Railsでプログラミングの第一歩を踏み出そう. ISBN: 978-4-297-13468-6
 
-[ref1]: Aspose.Words.80aec09d-ff3a-4c82-8729-29632cfbcada.001.png
+[ref1]: Words.80aec09d-ff3a-4c82-8729-29632cfbcada.001.png

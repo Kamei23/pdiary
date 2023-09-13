@@ -10,13 +10,13 @@ gemを使ってファイルアップロード機能を追加しよう
 
 *gem “carrierwave”, “~> 2.2.3”*
 
-![](Aspose.Words.fb451bf5-f26c-4f82-99ca-f319c9f7e617.001.jpeg)
+![](Words.fb451bf5-f26c-4f82-99ca-f319c9f7e617.001.jpeg)
 
 追加したら、ターミナルで次のコマンドを実行します。 *bundle*
 
 bundleコマンドは、Gemfileに書いたgemファイルをインストールするコマンドです。このコマンドを 実行すると次のようなメッセージが表示されます。
 
-![](Aspose.Words.fb451bf5-f26c-4f82-99ca-f319c9f7e617.002.jpeg)
+![](Words.fb451bf5-f26c-4f82-99ca-f319c9f7e617.002.jpeg)
 
 `　`bundleコマンドは、Gemfileに書いたCarrierWaveで利用しているgemも同時にインストールして くれます。Carrierwaveだけでなく、他のいくつかのgemもインストールされています。
 
@@ -24,7 +24,7 @@ bundleコマンドは、Gemfileに書いたgemファイルをインストール�
 
 *rails generate uploader Picture*
 
-![](Aspose.Words.fb451bf5-f26c-4f82-99ca-f319c9f7e617.003.png)
+![](Words.fb451bf5-f26c-4f82-99ca-f319c9f7e617.003.png)
 
 `　`Railsルートディレクトリからみて、app/uploadersの中にpicture\_uploader.rbというファイルが作 成されたというメッセージです。
 
@@ -32,7 +32,7 @@ pdiaryでCarrierWaveを使えるようにしよう
 
 `　`まず、app/models/idea.rbをエディターで開き、次のように変更します。
 
-![](Aspose.Words.fb451bf5-f26c-4f82-99ca-f319c9f7e617.004.png)
+![](Words.fb451bf5-f26c-4f82-99ca-f319c9f7e617.004.png)
 
 `　`追加した行は、Ideaクラスに、CarrierWaveのアップロード機能を追加するためのものです。
 
@@ -49,37 +49,37 @@ pdiaryでCarrierWaveを使えるようにしよう
 
 26行目付近にある、*<%= form.text\_field :picture %>*を変更します。
 
-![](Aspose.Words.fb451bf5-f26c-4f82-99ca-f319c9f7e617.005.png)
+![](Words.fb451bf5-f26c-4f82-99ca-f319c9f7e617.005.png)
 
 ページをリロードして確認してみると、ファイルを選択できる状態になっています。
 
-![](Aspose.Words.fb451bf5-f26c-4f82-99ca-f319c9f7e617.006.jpeg)
+![](Words.fb451bf5-f26c-4f82-99ca-f319c9f7e617.006.jpeg)
 
 アップロードしたファイルを見えるようにしよう
 
 `　`Webサーバーを起動させたまま、app/views/ideas/\_idea.html.erbをエディターで開きます。14 行目にある*<%= idea.picture %>*を変更します。
 
-![](Aspose.Words.fb451bf5-f26c-4f82-99ca-f319c9f7e617.007.png)
+![](Words.fb451bf5-f26c-4f82-99ca-f319c9f7e617.007.png)
 
 一覧画面や参照画面で画像が表示されているか確認してみましょう。
 
-![](Aspose.Words.fb451bf5-f26c-4f82-99ca-f319c9f7e617.008.jpeg)
+![](Words.fb451bf5-f26c-4f82-99ca-f319c9f7e617.008.jpeg)
 
 選択した画像ファイルのプレビュー機能を追加しよう
 
 `　`このままでは、一覧画面や参照画面では表示されますが、投稿画面などでは画像が表示され ません。選択した画像ファイルが何かわかりやすいようにプレビュー機能を追加してみましょう。 　プレビュー機能を追加するにあたり、javascriptを使用します。今回はapp/javascriptに新しく ideasというフォルダを作り、その下にpreview.jsというファイルを作ります。
 
-![](Aspose.Words.fb451bf5-f26c-4f82-99ca-f319c9f7e617.009.png)
+![](Words.fb451bf5-f26c-4f82-99ca-f319c9f7e617.009.png)
 
 `　`まず、画像をプレビューする場所を追加します。app/views/ideas/\_form.html.erbを開き、26行 目あたりから次のように変更します。
 
-![](Aspose.Words.fb451bf5-f26c-4f82-99ca-f319c9f7e617.010.png)
+![](Words.fb451bf5-f26c-4f82-99ca-f319c9f7e617.010.png)
 
 `　`*<%= form.file\_field :picture %>*に*id: “picture-input”*を追加します。次にdiv要素を追加し、こち らに*id=”picture-preview”*を追加します。これらのidはjavascriptで要素を指定する際に必要になり ます。
 
 `　`以上の変更が完了したら、先ほど作成した*app/javascript/ideas/preview.js*を開きます。 開いたら以下のコードを追加します。
 
-document.addEventListener("DOMContentLoaded", function() {![](Aspose.Words.fb451bf5-f26c-4f82-99ca-f319c9f7e617.011.png)
+document.addEventListener("DOMContentLoaded", function() {![](Words.fb451bf5-f26c-4f82-99ca-f319c9f7e617.011.png)
 
 const pictureInput = document.getElementById("picture-input");
 
@@ -157,11 +157,11 @@ picturePreview.innerHTML = ""; }
 
 `　`app/javascript/application.jsを開き、import “./ideas/preview”という一文を追加し、モジュール を読み込みます。
 
-![](Aspose.Words.fb451bf5-f26c-4f82-99ca-f319c9f7e617.012.jpeg)
+![](Words.fb451bf5-f26c-4f82-99ca-f319c9f7e617.012.jpeg)
 
 ブラウザをリロードして投稿画面で画像ファイルを選択してみましょう
 
-![](Aspose.Words.fb451bf5-f26c-4f82-99ca-f319c9f7e617.013.png)
+![](Words.fb451bf5-f26c-4f82-99ca-f319c9f7e617.013.png)
 
 無事、プレビュー画像が表示されました。 参考書籍
 
