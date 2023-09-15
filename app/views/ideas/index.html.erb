@@ -8,7 +8,7 @@
       <% idea_group.each do |idea| %>
         <div class="col-md-4 my-3">
           <%= link_to idea do %>
-            <%= image_tag(idea.picture_url, width: '100%') if idea.picture.present? %>
+            <%= image_tag(idea.picture_url(:thumb), width: '100%') if idea.picture.present? %>
           <% end %>
         </div>
       <% end %>
