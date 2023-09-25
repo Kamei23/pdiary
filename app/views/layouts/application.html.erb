@@ -35,6 +35,9 @@
               <% end %>
             </li>
           </ul>
+          <span class="navbar-text pull-right">
+            <%= button_to "Logout", destroy_user_session_path, method: :delete, data: { turbo: false }, class: "btn btn-link" %>
+          </span>
         </div>
       </div>
     </nav>
