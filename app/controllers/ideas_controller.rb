@@ -1,4 +1,5 @@
 class IdeasController < ApplicationController
+  before_action :authenticate_user!, only: :new
   before_action :set_idea, only: %i[ show edit update destroy ]
 
   # GET /ideas or /ideas.json
