@@ -1,7 +1,9 @@
 <%= render @idea %>
 
-<div class="btn-toolbar">
-  <%= link_to "Edit this idea", edit_idea_path(@idea), class: "btn btn-info" %>
+<% if user_signed_in? %>
+  <div class="btn-toolbar">
+    <%= link_to "Edit this idea", edit_idea_path(@idea), class: "btn btn-info" %>
 
-  <%= button_to "Destroy this idea", @idea, method: :delete, class: "btn btn-danger ms-3" %>
-</div>
+    <%= button_to "Destroy this idea", @idea, method: :delete, class: "btn btn-danger ms-3" %>
+  </div>
+<% end %>
